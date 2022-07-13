@@ -76,7 +76,7 @@ func compareFile(cfg *csvConfig, path string, left *csvFile) error {
 	}
 
 	reader.ReuseRecord = true
-	var count int = 0
+	var count = 0
 	processedIds := make(map[string]bool)
 	addedRecords := 0
 	removedRecords := 0
